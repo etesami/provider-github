@@ -1,0 +1,15 @@
+apiVersion: repository.github.upbound.io/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    meta.upbound.io/example-id: repository/v1alpha1/repository
+  labels:
+    testing.upbound.io/example-name: example
+  name: example
+spec:
+  forProvider:
+    description: "Managed with Crossplane Github Provider (generated with Upjet)"
+    visibility: public
+    name: example
+  providerConfigRef:
+    name: default
